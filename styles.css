@@ -39,6 +39,7 @@ body {
 
 #main {
     position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     transition: margin-left .5s;
     padding: 16px;
