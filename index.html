@@ -8,23 +8,33 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
-    <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-    </ul> 
-
-    <div class="header">
-        <h2>Header</h2>
+    
+    <video autoplay loop muted id="bgVideo">
+        <source src="resources/Cherry Blossom Animated Wallpaper.mp4" type="video/mp4">
+    </video>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
     </div>
 
-    <div class="row">
-        <div class="column" style="background-color: #aaa;"><img src="resources/Slime.jpe" style="height: 300px;"></div>
-        <div class="column" style="background-color: #bbb;">Column</div>
-        <div class="column" style="background-color: #ccc;">Column</div>
-        <div class="column" style="background-color: #ddd;">Column</div>
-        <div class="column" style="background-color: #eee;">Column</div>
-        <div class="column" style="background-color: #fff;">Column</div>
+    <div id="main">
+        <span style="font-size:30px;cursorLpointer" onclick="openNav()">&#9776;</span>
     </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
 </body>
 </html>
