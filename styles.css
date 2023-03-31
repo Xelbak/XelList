@@ -1,6 +1,5 @@
 body {
     font-family: "Lato", sans-serif;
-    transition: background-color .5s;
 }
 
 .sidenav {
@@ -12,12 +11,12 @@ body {
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     overflow-x: hidden;
-    transform: 0.5s;
+    transition: 0.5s;
     padding-top: 60px;
 }
 
 .sidenav a {
-    padding: 0px 8px 8px 32px;
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: white;
@@ -25,8 +24,8 @@ body {
     transition: 0.3s;
 }
 
-,.sidenav a:hover {
-    color: #f1f1f1;
+.sidenav a:hover {
+    color: #a09999;
 }
 
 .sidenav .closebtn {
@@ -55,13 +54,11 @@ body {
 }
   
 #bgVideo {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
 }
   
 .column {
@@ -96,8 +93,8 @@ body {
 .row {
     position: fixed;
     margin: auto;
-    margin-top: 400px;
-    margin-left: 250px;
+    margin-top: 200px;
+    margin-left: 200px;
     width: 80%;
     background: rgba(0, 0, 0, 0.5);
 }
